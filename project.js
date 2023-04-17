@@ -10,7 +10,7 @@ export function Project(){
   const[Product,setProduct]=useState([])
   useEffect(()=>{
        
-      fetch('http://localhost:3000/firstclass/data.json')
+      fetch('/firstclass/data.json')
       .then(res=>res.json())
       .then(pro=>setProduct(pro))
 })
